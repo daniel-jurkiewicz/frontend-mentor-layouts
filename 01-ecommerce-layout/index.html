@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="script.js" defer></script>
+
+		<title>Frontend Mentor | E-commerce product page</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<nav class="nav">
+				<div class="left">
+					<a href="index.html"
+						><img src="images/logo.svg" alt="sneakres" id="icon"
+					/></a>
+					<ul class="menu">
+						<li>
+							<a class="menu-item" href="#collections"
+								>Collections</a
+							>
+						</li>
+						<li><a class="menu-item" href="#men">Men</a></li>
+						<li><a class="menu-item" href="#women">Women</a></li>
+						<li><a class="menu-item" href="#about">About</a></li>
+						<li>
+							<a class="menu-item" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="right">
+					<div class="cart-button">
+						<a
+							><img
+								class="cart"
+								src="images/icon-cart.svg"
+								alt="cart"
+						/></a>
+						<div class="cart-dropdown">
+							<p id="txt1">Cart</p>
+							<hr />
+							<p id="txt2">Your cart is empty</p>
+						</div>
+					</div>
+					<img
+						class="avatar"
+						src="images/image-avatar.png"
+						alt="profile picture"
+					/>
+				</div>
+			</nav>
+
+			<div class="modal" id="myModal">
+				<div class="modal-wrapper">
+					<img class="modal-content" id="modal-photo" src="" alt="" />
+					<div class="modal-button modal-previous"></div>
+					<div class="modal-button modal-next"></div>
+					<span class="modal-exit" id="modalExit">&times;</span>
+
+					<div class="modal-thumbnails">
+						<img
+							class="modal-thumbnail"
+							src="images/image-product-1.jpg"
+							alt=""
+						/>
+						<img
+							class="modal-thumbnail"
+							src="images/image-product-2.jpg"
+							alt=""
+						/>
+						<img
+							class="modal-thumbnail"
+							src="images/image-product-3.jpg"
+							alt=""
+						/>
+						<img
+							class="modal-thumbnail"
+							src="images/image-product-4.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+
+			<main>
+				<div class="gallery">
+					<div class="main-photo">
+						<img
+							src="images/image-product-1.jpg"
+							id="large-photo"
+							alt=""
+						/>
+					</div>
+
+					<div class="under-photos">
+						<img
+							class="thumbnail"
+							src="images/image-product-1.jpg"
+							alt=""
+						/>
+						<img
+							class="thumbnail"
+							src="images/image-product-2.jpg"
+							alt=""
+						/>
+						<img
+							class="thumbnail"
+							src="images/image-product-3.jpg"
+							alt=""
+						/>
+						<img
+							class="thumbnail"
+							src="images/image-product-4.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+
+				<div class="product">
+					<div class="info">
+						<h1 class="company-name">Sneaker Company</h1>
+						<h2 class="product-name">
+							Fall Limited Edition Sneakers
+						</h2>
+						<p>
+							These low-profile sneakers are your perfect casual
+							wear companion. Featuring a durable rubber outer
+							sole, they'll withstand everything the weather can
+							offer.
+						</p>
+					</div>
+
+					<div class="price">
+						<p>$125.00 <span>50%</span></p>
+						<p>$250.00</p>
+					</div>
+
+					<div class="buttons">
+						<div class="amount">
+							<img
+								id="decrement-button"
+								src="images/icon-minus.svg"
+								alt="-"
+							/>
+							<p id="shop-counter">0</p>
+							<img
+								id="increment-button"
+								src="images/icon-plus.svg"
+								alt="+"
+							/>
+						</div>
+						<button class="btn" type="button">
+							<img src="images/icon-cart-btn.svg" alt="" /><span
+								>Add to cart</span
+							>
+						</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
